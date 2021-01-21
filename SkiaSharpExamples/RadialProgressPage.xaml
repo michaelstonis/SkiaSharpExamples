@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="SkiaSharpExamples.RadialProgressPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SkiaSharpExamples"
+             BackgroundColor="Black">
+    <Grid Padding="8">
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="Handle_Tapped" />
+        </Grid.GestureRecognizers>
+        <local:CircularProgress x:Name="Progress1"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                EndingDegrees="270"
+                                ProgressColor="#FF367E"
+                                ProgressThickness="24"
+                                StartingDegrees="-90"
+                                Jagged="True"/>
+        <local:CircularProgress x:Name="Progress2"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="24"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                EndingDegrees="315"
+                                ProgressColor="#B3FE45"
+                                ProgressThickness="24"
+                                StartingDegrees="-90"
+                                Jagged="True"/>
+        <local:CircularProgress x:Name="Progress3"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="48"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                StartingDegrees="-90"
+                                EndingDegrees="180"
+                                ProgressColor="#00D2D1"
+                                ProgressThickness="24"
+                                Jagged="True"/>
+    </Grid>
+</ContentPage>
